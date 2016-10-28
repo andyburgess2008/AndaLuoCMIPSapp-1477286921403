@@ -2,17 +2,6 @@
 <head>Hello user</head>
 <body>
     <div class="container">
-     <p>User ID: <%=user.id %> </p>
-    </div>
-</body>
-
-</html>
-
-
-<html>
-<head>Hello user</head>
-<body>
-    <div class="container">
 
 ID: <%= user.id %><br/>
 Username: <%= user.name.givenName %><br/>
@@ -21,7 +10,7 @@ Name: <%= user.email %><br/>
 Email: <%= user.emails[0].value %><br/>
 <% } %>
 </p>
-<a href="/logout">Log out</a>
+<a href="/home">Log out</a>
 </div>
 </body>
 </html>
