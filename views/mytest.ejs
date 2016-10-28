@@ -9,7 +9,7 @@
     <% if (!user) { %>
 	<p>Welcome! Please <a href="/singup">log in</a>.</p>
 <% } else { %>
-	<p>Hello, <%= user.name.firstName %>. View your <a href="/profile">profile</a>.</p>
+	<p>Hello, <%= user.firstName %>. View your <a href="/profile">profile</a>.</p>
 <% } %>
     
     </div>
