@@ -4,11 +4,12 @@
     <div class="container">
     <h3>Welcome to Login</h3>
     <p>The User ID:  <%=user.id %></p>
-    
+    <p>The User FirstName:  <%=user.firstName %></p>
+    <p>The User LastName:  <%=user.lastName %></p>
     <% if (!user) { %>
 	<p>Welcome! Please <a href="/singup">log in</a>.</p>
 <% } else { %>
-	<p>Hello, <%= user.firstName %>. View your <a href="/profile">profile</a>.</p>
+	<p>Hello, <%= user.name.firstName %>. View your <a href="/profile">profile</a>.</p>
 <% } %>
     
     </div>
