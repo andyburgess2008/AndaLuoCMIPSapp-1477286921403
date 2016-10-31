@@ -145,6 +145,11 @@ app.get('/home', function(req, res){
 	
 });
 
+app.get('/question', function(req, res){
+	res.render('question', {});
+	
+});
+
 
 app.get('/exit', ensureAuthenticated, function(req, res) {
           req.logout();
