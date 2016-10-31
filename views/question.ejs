@@ -18,7 +18,7 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
   $http.get("https://timesheetservices.mybluemix.net/getSecurityQuestions")
   .then(function(response) {
-      $scope.myWelcome = response.rows;
+      $scope.myWelcome = response;
   });
 });
 </script>
